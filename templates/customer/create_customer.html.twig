@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Crear Cliente{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="mb-3 mt-3">
+            <h2 class="text-success text-lg-center">Registro de Cliente</h2>
+        </div>
+        {{ form(form_create_customer) }}
+    </div>
+{% endblock %}

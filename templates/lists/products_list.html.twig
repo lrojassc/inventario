@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listado de productos{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1 class="d-flex align-items-center justify-content-between">Listado de Productos</h1>
+
+    <table class="table table-striped">
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.code }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.unit }}</td>
+                <td>{{ product.size }}</td>
+                <td>
+                    <a href="{{ path('update_product', {code: product.code}) }}">Editar</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Actualizar Producto{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="mb-3 mt-3">
+            <h2 class="text-success text-lg-center">Actualizar producto {{ code }}</h2>
+        </div>
+        {{ form(form_update_product) }}
+    </div>
+{% endblock %}

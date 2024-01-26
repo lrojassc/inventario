@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Crear Factura de Compra{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="mb-3 mt-3">
+            <h2 class="text-success text-lg-center">Crear Factura de Compra</h2>
+        </div>
+        {{ form(form_purchase_invoice) }}
+    </div>
+{% endblock %}
